@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Thank you for taking the time to help us improve our services.</p>
+        <form id="survey-form">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Age -->
+            <label for="age">Age (optional):</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+
+            <!-- Role -->
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Recommendation -->
+            <label>Would you recommend our services to a friend?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="recommend" value="definitely" required> Definitely</label>
+                <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+                <label><input type="radio" name="recommend" value="not-sure"> Not sure</label>
+            </div>
+
+            <!-- Favorite Feature -->
+            <label for="feature">What is your favorite feature of our services?</label>
+            <select id="feature" name="feature" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="ease-of-use">Ease of Use</option>
+                <option value="design">Design</option>
+                <option value="functionality">Functionality</option>
+            </select>
+
+            <!-- Improvements -->
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="improvements" value="frontend"> Front-end Projects</label>
+                <label><input type="checkbox" name="improvements" value="backend"> Back-end Projects</label>
+                <label><input type="checkbox" name="improvements" value="data"> Data Visualization</label>
+                <label><input type="checkbox" name="improvements" value="challenges"> Challenges</label>
+            </div>
+
+            <!-- Comments -->
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

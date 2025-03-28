@@ -1,0 +1,42 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+header {
+    background: #ff80ab;
+    color: white;
+    padding: 20px 0;
+    text-shadow: 2px 2px #d81b60;
+}
+
+header h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #880e4f;
+    margin-top: 20px;
+}
+
+.media-img {
+    width: 200px;
+    margin: 15px;
+    border: 3px solid #880e4f;
+    border-radius: 10px;
+}
+
+audio,
+video {
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    background: #880e4f;
+    color: white;
+    padding: 10px;
+}
